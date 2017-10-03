@@ -1,0 +1,10 @@
+AccessController.class
+Duel.class
+User.class
+FileEdit.class
+AliveStatus.class
+Fighter.class
+UserDAO.class
+HelloServlet.class
+AccessStatuses.class
+DatabaseController.class

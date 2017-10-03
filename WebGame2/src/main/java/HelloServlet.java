@@ -31,6 +31,11 @@ public class HelloServlet extends HttpServlet {
             return;
         }
         //this.process(httpServletRequest,httpServletResponse);
+        if ( currentWindow == 2 ) // menu
+        {
+            menuPage(out,httpServletRequest);
+            return;
+        }
 
         createStartPage(out);
 
@@ -137,10 +142,11 @@ public class HelloServlet extends HttpServlet {
                         UserDAO.addLoseToUser(databaseController, duel.fighter1.getName());
                     }
                     menuPage(out, request);
-                    currentWindow = 0;
+                    currentWindow = 2;
                     duel = null;
                     second = -1;
                     isDuelActive = false;
+                    log = null;
                     return;
 
                 }

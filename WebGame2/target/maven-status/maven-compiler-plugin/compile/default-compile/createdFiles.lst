@@ -1,7 +1,6 @@
 AccessController.class
 Duel.class
 User.class
-FileEdit.class
 AliveStatus.class
 Fighter.class
 UserDAO.class
